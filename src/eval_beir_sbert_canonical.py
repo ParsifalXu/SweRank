@@ -97,6 +97,7 @@ def main():
         prefx += '_'
     else:
         prefx += f'-{args.level}_'
+    print(f"Using prefx: {prefx}")
 
     instance_list = [i for i in os.listdir(args.dataset_dir) if i.startswith(prefx)]
     print(f"Total instances in dataset: {len(dataset)}")
@@ -106,6 +107,10 @@ def main():
         loc_bench_ids = [prefx + i for i in dataset['instance_id']]
         instance_list = [i for i in instance_list if i in loc_bench_ids]
         assert len(instance_list) == len(loc_bench_ids)
+    elif args.dataset == "pattern-queries":
+        pattern_query_ids = [prefx + str(i) for i in dataset['instance_id']]
+        instance_list = [i for i in instance_list if i in pattern_query_ids]
+        assert len(instance_list) == len(pattern_query_ids)
 
     for ins_dir in tqdm(instance_list):
         logging.info("Instance Repo: {}".format(ins_dir))

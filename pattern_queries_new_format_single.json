@@ -1,0 +1,17 @@
+[
+    {
+        "instance_id": "1",
+        "repo": "astropy/astropy",
+        "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
+        "problem_statement": "Find all functions where: (1) the function body contains more than fifty assertion statements (assert keyword)",
+        "ref_locations": [
+            "astropy/modeling/tests/test_bounding_box.py:TestModelBoundingBox.test__setitem__",
+            "astropy/io/fits/tests/test_table.py:TestTableFunctions.test_new_table_with_fits_rec",
+            "astropy/io/fits/tests/test_table.py:TestTableFunctions.test_merge_tables",
+            "astropy/io/fits/tests/test_table.py:TestTableFunctions.test_bin_table_hdu_constructor",
+            "astropy/io/fits/tests/test_table.py:TestTableFunctions.test_appending_a_column",
+            "astropy/io/fits/tests/test_table.py:TestTableFunctions.test_new_table_with_ndarray",
+            "astropy/coordinates/tests/test_shape_manipulation.py:TestManipulation.test_reshape"
+        ]
+    }
+]

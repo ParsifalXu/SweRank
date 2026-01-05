@@ -1,0 +1,270 @@
+[
+    {
+        "instance_id": "1",
+        "repo": "astropy/astropy",
+        "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
+        "problem_statement": "Find all functions where: (1) the function body contains more than fifty assertion statements (assert keyword)",
+        "ref_locations": [
+            "astropy/modeling/tests/test_bounding_box.py:TestModelBoundingBox.test__setitem__",
+            "astropy/io/fits/tests/test_table.py:TestTableFunctions.test_new_table_with_fits_rec",
+            "astropy/io/fits/tests/test_table.py:TestTableFunctions.test_merge_tables",
+            "astropy/io/fits/tests/test_table.py:TestTableFunctions.test_bin_table_hdu_constructor",
+            "astropy/io/fits/tests/test_table.py:TestTableFunctions.test_appending_a_column",
+            "astropy/io/fits/tests/test_table.py:TestTableFunctions.test_new_table_with_ndarray",
+            "astropy/coordinates/tests/test_shape_manipulation.py:TestManipulation.test_reshape"
+        ]
+    },
+    {
+        "instance_id": "2",
+        "repo": "astropy/astropy",
+        "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
+        "problem_statement": "Find all classes where: (1) the inheritance depth (distance from root class to this class in the inheritance hierarchy, including the root class (Object) and the class itself) is the maximum among all classes in the codebase",
+        "ref_locations": [
+            "astropy/cosmology/tests/test_flrw.py:TestFlatLambdaCDM",
+            "astropy/cosmology/tests/test_flrw.py:TestFlatwCDM",
+            "astropy/cosmology/tests/test_flrw.py:TestFlatw0waCDM"
+        ]
+    },
+    {
+        "instance_id": "3",
+        "repo": "astropy/astropy",
+        "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
+        "problem_statement": "Find all functions where: (1) the function has more than 15 parameters, and (2) the function is not an initialization method (e.g., __init__, constructor)",
+        "ref_locations": [
+            "astropy/convolution/convolve.py:convolve_fft",
+            "astropy/io/fits/column.py:Column._verify_keywords"
+        ]
+    },
+    {
+        "instance_id": "4",
+        "repo": "astropy/astropy",
+        "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
+        "problem_statement": "Find all functions where: (1) the function contains a conditional statement, and (2) has the maximum number of branches in that conditional statement (counting if, elif, else)",
+        "ref_locations": [
+            "astropy/astropy/extern/_strptime.py:_strptime"
+        ]
+    },
+    {
+        "instance_id": "5",
+        "repo": "astropy/astropy",
+        "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
+        "problem_statement": "Find all functions where: (1) the function contains a while loop with at least one conditional statement in its body, and (2) the while loop body contains all three early exit statements: break, return, continue",
+        "ref_locations": [
+            "astropy/astropy/extern/ply/lex.py:Lexer.token"
+        ]
+    },
+    {
+        "instance_id": "6",
+        "repo": "astropy/astropy",
+        "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
+        "problem_statement": "Find all functions where: (1) the function contains nested if statements, (2) an inner if statement redundantly checks a condition by the outer if statement, and (3) example: if A and B: ... if B: ...",
+        "ref_locations": [
+            "astropy/coordinates/baseframe.py:BaseCoordinateFrame._infer_data"
+        ]
+    },
+    {
+        "instance_id": "7",
+        "repo": "astropy/astropy",
+        "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
+        "problem_statement": "Find all files where: (1) the file contains the most imported objects",
+        "ref_locations": [
+            "astropy/io/votable/tree.py"
+        ]
+    },
+    {
+        "instance_id": "8",
+        "repo": "astropy/astropy",
+        "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
+        "problem_statement": "Find all functions where: (1) the function only uses three parameters: self, *args, and **kwargs, (2) the function contains conditional statements (if/elif/else), and (3) the function contains try-except blocks",
+        "ref_locations": [
+            "astropy/coordinates/representation.py:BaseRepresentationOrDifferential.__init__",
+            "astropy/logger.py:AstropyLogger._showwarning",
+            "astropy/table/connect.py:TableRead.__call__",
+            "astropy/time/core.py:TimeDelta.to_value",
+            "astropy/constants/constant.py:ConstantMeta.__new__.wrap.wrapper"
+        ]
+    },
+    {
+        "instance_id": "9",
+        "repo": "astropy/astropy",
+        "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
+        "problem_statement": "Find all functions where: (1) the function has a while loop containing a try-except block, and (2) the except block contains a break statement",
+        "ref_locations": [
+            "astropy/samp/utils.py:ServerProxyPool.shutdown",
+            "astropy/io/fits/header.py:Header._from_blocks",
+            "astropy/io/votable/tree.py:Table._parse_binary"
+        ]
+    },
+    {
+        "instance_id": "10",
+        "repo": "astropy/astropy",
+        "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
+        "problem_statement": "Find all functions where: (1) the function has more than 5 parameters (excluding *args and **kwargs), and (2) the function contains a conditional statement with a while loop inside at least one of its branches",
+        "ref_locations": [
+            "astropy/extern/ply/yacc.py:traverse",
+            "astropy/astropy/wcs/wcs.py:WCS._all_world2pix",
+            "astropy/table/table.py:Table.add_column",
+            "astropy/io/fits/hdu/hdulist.py:HDUList._readfrom"
+        ]
+    },
+    {
+        "instance_id": "11",
+        "repo": "astropy/astropy",
+        "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
+        "problem_statement": "Find all functions where: (1) the function contains a compound boolean expression using AND, OR, and NOT operators simultaneously, and (2) the expression at leaset includes type check for the bool type",
+        "ref_locations": [
+            "astropy/nddata/bitmask.py:_is_int",
+            "astropy/modeling/core.py:Model._generic_evaluate"
+        ]
+    },
+    {
+        "instance_id": "12",
+        "repo": "astropy/astropy",
+        "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
+        "problem_statement": "Find all functions where: (1) the function contains a conditional statement with a condition that uses the AND operator to combine two type-checking expressions, (2) one of branch of this conditional statement contains a for-in loop",
+        "ref_locations": [
+            "astropy/utils/diff.py:report_diff_values",
+            "astropy/io/misc/asdf/tags/tests/helpers.py:run_schema_example_test",
+            "astropy/modeling/core.py:binary_operation",
+            "astropy/visualization/units.py:MplQuantityConverter.convert"
+        ]
+    },
+    {
+        "instance_id": "13",
+        "repo": "astropy/astropy",
+        "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
+        "problem_statement": "Find all functions where: (1) the function signature contains both *args and **kwargs parameters, (2) the function body contains an OR expression that combines exactly two equality checks (==)",
+        "ref_locations": [
+            "astropy/coordinates/baseframe.py:BaseCoordinateFrame._apply",
+            "astropy/coordinates/sky_coordinate.py:SkyCoord._apply",
+            "astropy/time/core.py:TimeBase._apply"
+        ]
+    },
+    {
+        "instance_id": "14",
+        "repo": "astropy/astropy",
+        "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
+        "problem_statement": "Find all classes where: (1) the __init__ method contains an if statement that checks whether a parameter is None, (2) one branch of this if statement raises TypeError and the other branch raises ValueError",
+        "ref_locations": [
+            "astropy/timeseries/sampled.py:TimeSeries"
+        ]
+    },
+    {
+        "instance_id": "15",
+        "repo": "astropy/astropy",
+        "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
+        "problem_statement": "Find all functions where: (1) the function has exactly 13 parameters, (2) the function body performs membership validation using the in operator, (3) the function body performs None checks",
+        "ref_locations": [
+            "astropy/extern/ply/yacc.py:yacc"
+        ]
+    },
+    {
+        "instance_id": "16",
+        "repo": "astropy/astropy",
+        "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
+        "problem_statement": "Find all functions where: (1) the function body contains type checking on 3 different built-in collections (list, dict, tuple)",
+        "ref_locations": [
+            "astropy/nddata/bitmask.py:BitFlagNameMeta.__add__",
+            "astropy/units/core.py:UnitBase.compose",
+            "astropy/extern/configobj/configobj.py:ConfigObj._load"
+        ]
+    },
+    {
+        "instance_id": "17",
+        "repo": "astropy/astropy",
+        "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
+        "problem_statement": "Find all functions where: (1) the function signature contains no parameters, (2) the function body contains type checking on both bool and str types",
+        "ref_locations": [
+            "astropy/config/tests/test_configs.py:test_configitem_types",
+            "astropy/io/votable/tests/table_test.py:test_validate_output_invalid",
+            "astropy/io/votable/tests/table_test.py:test_validate_output_valid"
+        ]
+    },
+    {
+        "instance_id": "18",
+        "repo": "astropy/astropy",
+        "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
+        "problem_statement": "Find all functions where: (1) the function contains a try-except block, (2) the function body includes type check for the float type",
+        "ref_locations": [
+            "astropy/extern/configobj/validate.py:_is_num_param",
+            "astropy/extern/configobj/validate.py:is_float",
+            "astropy/io/fits/card.py:Card.value",
+            "astropy/io/fits/card.py:_int_or_float",
+            "astropy/units/core.py:_UnitMetaClass.__call__",
+            "astropy/units/utils.py:validate_power"
+        ]
+    },
+    {
+        "instance_id": "19",
+        "repo": "astropy/astropy",
+        "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
+        "problem_statement": "Find all functions where: (1) the function uses with-open statements for file I/O, (2) the function has nested for-in loops, and (3) the function contains at least one import statement (import or from...import at function level)",
+        "ref_locations": [
+            "astropy/io/ascii/qdp.py:_write_table_qdp",
+            "astropy/io/votable/validator/main.py:get_urls"
+        ]
+    },
+    {
+        "instance_id": "20",
+        "repo": "astropy/astropy",
+        "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
+        "problem_statement": "Find all functions where: (1) the function has at least 12 parameters with default values, (2) each default value is either None, True, or False, (3) all three values (None, True, False) appear at least once among these default values",
+        "ref_locations": [
+            "astropy/extern/configobj/configobj.py:ConfigObj.__init__"
+        ]
+    },
+    {
+        "instance_id": "21",
+        "repo": "astropy/astropy",
+        "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
+        "problem_statement": "Find all functions where: (1) the function has at least 2 parameters with int default values, (2) the function body contains a try-except block",
+        "ref_locations": [
+            "astropy/samp/hub.py:SAMPHubServer.__init__",
+            "astropy/samp/tests/web_profile_test_helpers.py:SAMPWebHubProxy.connect",
+            "astropy/units/core.py:UnitBase._compose",
+            "astropy/wcs/tests/test_wcs.py:test_all_world2pix"
+        ]
+    },
+    {
+        "instance_id": "22",
+        "repo": "astropy/astropy",
+        "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
+        "problem_statement": "Find all functions where: (1) the function has at least 10 parameters with default values, (2) the function contains a conditional statement with more than 5 branches",
+        "ref_locations": [
+            "astropy/visualization/mpl_normalize.py:simple_norm",
+            "astropy/table/table.py:Table.__init__"
+        ]
+    },
+    {
+        "instance_id": "23",
+        "repo": "astropy/astropy",
+        "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
+        "problem_statement": "Find all functions where: (1) the function contains exactly 5 try-except blocks, (2) try-except block handles different types of exception",
+        "ref_locations": [
+            "astropy/wcs/wcs.py:WCS.__init__",
+            "astropy/extern/configobj/configobj.py:ConfigObj._parse"
+        ]
+    },
+    {
+        "instance_id": "24",
+        "repo": "astropy/astropy",
+        "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
+        "problem_statement": "Find all functions where: (1) the function has at least 6 parameters, (2) the function body conditionally raises at least 4 different exception types",
+        "ref_locations": [
+            "astropy/convolution/convolve.py:convolve",
+            "astropy/table/operations.py:_join",
+            "astropy/convolution/convolve.py:convolve_fft",
+            "astropy/io/misc/hdf5.py:write_table_hdf5"
+        ]
+    },
+    {
+        "instance_id": "25",
+        "repo": "astropy/astropy",
+        "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
+        "problem_statement": "Find all classes where: (1) the class has more than 15 methods, (2) at least one method has more than 15 parameters (excluding `self`)",
+        "ref_locations": [
+            "astropy/io/fits/column.py:Column",
+            "astropy/io/votable/tree.py:Field"
+        ]
+    }
+]

@@ -6,7 +6,8 @@ MODEL_NAME=${1:-"Salesforce/SweRankEmbed-Small"}
 MODEL_TAG=${2:-"SweRankEmbed-Small"}
 BATCH_SIZE=128
 DATASET_DIR=${3:-"./datasets/"}
-DATASET=${4:-"swe-bench-lite"}
+# DATASET=${4:-"swe-bench-lite"}
+DATASET=${4:-"pattern-queries"}
 OUTPUT_DIR=${5:-"./results/"}
 
 OUTPUT_FILE=${OUTPUT_DIR}/model=${MODEL_TAG}_dataset=${DATASET}_split=${SPLIT}_level=${LEVEL}_evalmode=${EVAL_MODE}_output.json
@@ -27,11 +28,11 @@ python src/eval_beir_sbert_canonical.py \
 
 echo "Retriever results saved to $RESULTS_FILE"
 
-echo "Running evaluation..."
+# echo "Running evaluation..."
 
-python src/refactored_eval_localization.py \
-        --model $MODEL_TAG \
-        --output_dir $OUTPUT_DIR \
-        --dataset_dir $DATASET_DIR \
-        --output_file $RESULTS_FILE \
-        --dataset $DATASET
+# python src/refactored_eval_localization.py \
+#         --model $MODEL_TAG \
+#         --output_dir $OUTPUT_DIR \
+#         --dataset_dir $DATASET_DIR \
+#         --output_file $RESULTS_FILE \
+#         --dataset $DATASET

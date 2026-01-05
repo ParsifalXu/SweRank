@@ -81,6 +81,9 @@ def main():
         dataset = load_dataset("princeton-nlp/SWE-bench_Lite")[args.split]
     elif args.dataset == "loc-bench":
         dataset = load_dataset("czlll/Loc-Bench_V1")[args.split]
+    elif args.dataset == "pattern-queries":
+        with open(os.getcwd() + "/pattern_queries_new_format_single.json", 'r') as f:
+            dataset = json.load(f)
     else:
         raise ValueError(f"Dataset {args.dataset} not supported")
 

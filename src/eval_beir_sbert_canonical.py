@@ -154,18 +154,19 @@ def main():
     dataset.to_json(args.results_file)
 
     avg_eval_results = {}
-    for k,v_dict in all_eval_results[0].items():
-        if isinstance(v_dict, dict):
-            avg_v_dict = {}
-            for vk,vv in v_dict.items():
-                avg_vv = sum([e[k][vk] for e in all_eval_results])/len(all_eval_results)
-                avg_v_dict[vk] = avg_vv
-            avg_eval_results.update(avg_v_dict)
-        elif isinstance(v_dict, float):
-            avg_v = sum([e[k] for e in all_eval_results])/len(all_eval_results)
-            avg_eval_results[k] = avg_v
-        else:
-            raise ValueError
+    if len(all_eval_results) > 0:
+        for k,v_dict in all_eval_results[0].items():
+            if isinstance(v_dict, dict):
+                avg_v_dict = {}
+                for vk,vv in v_dict.items():
+                    avg_vv = sum([e[k][vk] for e in all_eval_results])/len(all_eval_results)
+                    avg_v_dict[vk] = avg_vv
+                avg_eval_results.update(avg_v_dict)
+            elif isinstance(v_dict, float):
+                avg_v = sum([e[k] for e in all_eval_results])/len(all_eval_results)
+                avg_eval_results[k] = avg_v
+            else:
+                raise ValueError
         
     print("Average Eval Results: ", avg_eval_results)
     with open(args.output_file, "w") as f:

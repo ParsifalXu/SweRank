@@ -5,11 +5,12 @@ set -e
 export REPO_DIR="$(pwd)"
 export OUTPUT_DIR="${REPO_DIR}/results"
 
-retriever=${1:-"SweRankEmbed-Large"}
-RERANKER_MODEL_PATH=${2:-"SweRankLLM-Large"}
-RERANKER_TAG=${3:-"SweRankLLM-Large"}
+retriever=${1:-"SweRankEmbed-Small"}
+RERANKER_MODEL_PATH=${2:-"SweRankLLM-Small"}
+RERANKER_TAG=${3:-"SweRankLLM-Small"}
 DATASET_DIR=${4:-"./datasets"}
-dataset=${5:-"swe-bench-lite"}
+# dataset=${5:-"swe-bench-lite"}
+DATASET=${5:-"pattern-queries"}
 split=${6:-"test"}
 level=${7:-"function"}
 eval_mode=${8:-"default"}

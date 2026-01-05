@@ -99,6 +99,9 @@ def main():
         prefx += f'-{args.level}_'
 
     instance_list = [i for i in os.listdir(args.dataset_dir) if i.startswith(prefx)]
+    print(f"Total instances in dataset: {len(dataset)}")
+    print(f"Length instance_list: {len(instance_list)}")
+    print(f"Check 5 instance_list: {instance_list[:5]} ...")
     if args.dataset == "loc-bench":
         loc_bench_ids = [prefx + i for i in dataset['instance_id']]
         instance_list = [i for i in instance_list if i in loc_bench_ids]

@@ -98,7 +98,7 @@ def run_convert_and_rerank(args):
             args.data_type="csn"
         rerank_type="code"
         prompt_type = "docstring"
-    elif args.dataset_name in ["swe-bench-lite", "loc-bench"]:
+    elif args.dataset_name in ["swe-bench-lite", "loc-bench", "pattern-queries"]:
         if args.data_type:
             args.data_type=f"{args.data_type}_{args.dataset_name}"
         else:

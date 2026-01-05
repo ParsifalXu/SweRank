@@ -5,7 +5,7 @@ import logging
 import pathlib
 import argparse
 from time import time
-from datasets import load_dataset
+from datasets import load_dataset, Dataset
 from beir import util, LoggingHandler
 from beir.retrieval import models
 from beir.datasets.data_loader import GenericDataLoader
@@ -83,7 +83,7 @@ def main():
         dataset = load_dataset("czlll/Loc-Bench_V1")[args.split]
     elif args.dataset == "pattern-queries":
         with open(os.getcwd() + "/pattern_queries_new_format_single.json", 'r') as f:
-            dataset = json.load(f)
+            dataset = Dataset.from_list(json.load(f))
     else:
         raise ValueError(f"Dataset {args.dataset} not supported")
 

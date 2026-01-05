@@ -1,6 +1,6 @@
 [
     {
-        "instance_id": "1",
+        "instance_id": "astropy__astropy-1",
         "repo": "astropy/astropy",
         "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
         "problem_statement": "Find all functions where: (1) the function body contains more than fifty assertion statements (assert keyword)",

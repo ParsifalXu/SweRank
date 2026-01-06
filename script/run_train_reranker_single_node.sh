@@ -25,7 +25,7 @@ TRAIN_ARGS="--model_name_or_path ${BASE_MODEL}
     --per_device_eval_batch_size 1
     --num_train_epochs 1
     --seed 42
-    --per_device_train_batch_size 4
+    --per_device_train_batch_size 2
     --eval_steps 1000
     --gradient_checkpointing
     --gradient_accumulation_steps 4

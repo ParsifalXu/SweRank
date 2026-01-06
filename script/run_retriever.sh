@@ -4,7 +4,7 @@ LEVEL="function"
 
 MODEL_NAME=${1:-"Salesforce/SweRankEmbed-Small"}
 MODEL_TAG=${2:-"SweRankEmbed-Small"}
-BATCH_SIZE=128
+BATCH_SIZE=32
 DATASET_DIR=${3:-"./datasets/"}
 # DATASET=${4:-"swe-bench-lite"}
 DATASET=${4:-"pattern-queries"}

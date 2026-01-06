@@ -355,7 +355,7 @@ class RankListwiseOSLLM(RankLLM):
         use_alpha: bool,
         rank_start: int,
         rank_end: int,
-        batch_size: int = 32,
+        batch_size: int = 8,
     ) -> List[Tuple[str, int]]:
         def chunks(lst, n):
             """Yield successive n-sized chunks from lst."""

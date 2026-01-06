@@ -49,9 +49,7 @@ python src/rerank.py \
     --eval_dir "${OUTPUT_DIR}" \
     --top_k "${TOP_K}" \
     --window_size "${WINDOW_SIZE}" \
-    --step_size "${STEP_SIZE}" \
-    --use_parallel_reranking \
-    --tensor_parallel_size 1
+    --step_size "${STEP_SIZE}"
 
 echo "Reranking completed!"
 

@@ -2,8 +2,8 @@
 
 set -e
 
-# Use only one GPU to avoid memory conflicts
-export CUDA_VISIBLE_DEVICES=2
+# Use multiple available GPUs for 32B model
+export CUDA_VISIBLE_DEVICES=1,2,3,4
 
 export REPO_DIR="$(pwd)"
 export OUTPUT_DIR="${REPO_DIR}/results"
@@ -49,7 +49,8 @@ python src/rerank.py \
     --eval_dir "${OUTPUT_DIR}" \
     --top_k "${TOP_K}" \
     --window_size "${WINDOW_SIZE}" \
-    --step_size "${STEP_SIZE}"
+    --step_size "${STEP_SIZE}" \
+    --tensor_parallel_size 4
 
 echo "Reranking completed!"
 

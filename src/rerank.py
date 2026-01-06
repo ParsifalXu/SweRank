@@ -163,7 +163,7 @@ def run_convert_and_rerank(args):
             futures = [process_dataset_parallel.remote(
                 model=args.model, 
                 output_path=args.output_dir, 
-                data_dir=args.dataset_dir if args.dataset_name in ["swe-bench-lite", "loc-bench" ]else code_datasets_dir,
+                data_dir=args.dataset_dir if args.dataset_name in ["swe-bench-lite", "loc-bench", "pattern-queries" ]else code_datasets_dir,
                 dataset=sharded_inputs[i], 
                 data_type=args.data_type, 
                 eval_dir=args.eval_dir,
@@ -186,7 +186,7 @@ def run_convert_and_rerank(args):
         rerank_llm.process_dataset(
             model=args.model, 
             output_path=args.output_dir, 
-            data_dir=args.dataset_dir if args.dataset_name in ["swe-bench-lite", "loc-bench" ]else code_datasets_dir,
+            data_dir=args.dataset_dir if args.dataset_name in ["swe-bench-lite", "loc-bench", "pattern-queries" ]else code_datasets_dir,
             dataset=datasets, 
             data_type=args.data_type, 
             eval_dir=args.eval_dir,

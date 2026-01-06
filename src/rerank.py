@@ -213,7 +213,7 @@ def main():
     parser.add_argument("--eval_dir", type=str, required=True,
                       help="Directory to store evaluation results")
     parser.add_argument("--retriever_output_dir", type=str, required=True)
-    parser.add_argument("--top_k", type=int, default=100,
+    parser.add_argument("--top_k", type=int, default=10,
                       help="Number of candidates to rerank")
     parser.add_argument("--window_size", type=int, default=10,
                       help="Window size for reranking")

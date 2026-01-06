@@ -14,7 +14,7 @@ level=${5:-"function"}
 eval_mode=${6:-"default"} 
 
 # Default reranking parameters
-TOP_K=100
+TOP_K=10
 WINDOW_SIZE=10
 STEP_SIZE=5
 

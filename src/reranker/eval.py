@@ -91,9 +91,9 @@ def eval_rerank(output_path, data_dir, dataset, data_type, suffix="", rerank_typ
 
         # Load rerank results from appropriate directory
         if rerank_type == "code":
-            model_output_path = os.path.join(output_path, "code_datasets", dataset, f"rerank_100_{suffix}.json")
+            model_output_path = os.path.join(output_path, "code_datasets", dataset, f"rerank_10_{suffix}.json")
         else:
-            model_output_path = os.path.join(output_path, "beir", dataset, f"rerank_100_{suffix}.json")
+            model_output_path = os.path.join(output_path, "beir", dataset, f"rerank_10_{suffix}.json")
 
         if not os.path.exists(model_output_path):
             print(f"Rerank file not found: {model_output_path}")

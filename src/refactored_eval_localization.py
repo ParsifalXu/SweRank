@@ -527,7 +527,7 @@ def evaluate_results(model='coderankembed_loc', output_dir="outputs",reranker_ou
             instance_list = [i for i in instance_list if i in filtered_ids]
             assert len(instance_list) == len(filtered_ids)
         for ins_dir in instance_list:
-            retrieved_results = load_json(os.path.join(reranker_output_dir, ins_dir, "rerank_100_llm_gen_num.json"))[0]
+            retrieved_results = load_json(os.path.join(reranker_output_dir, ins_dir, "rerank_10_llm_gen_num.json"))[0]
             get_sorted_documents_func(retrieved_results, reranker_results)
     else:
         reranker_results = None

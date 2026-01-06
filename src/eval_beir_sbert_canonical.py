@@ -28,7 +28,7 @@ def load_json(file_path: str) -> dict:
     with open(file_path, 'r') as f:
         return json.load(f)
         
-def get_top_docs(results: dict, corpus: dict, task_id: str, topk: int = 100) -> list[str]:
+def get_top_docs(results: dict, corpus: dict, task_id: str, topk: int = 10) -> list[str]:
     if task_id not in results: return []
     doc_scores = results[task_id]
     doc_scores_sorted = sorted(doc_scores.items(), key=lambda item: item[1], reverse=True)

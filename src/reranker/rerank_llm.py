@@ -74,9 +74,9 @@ def rerank_beir_outputs(reranker, output_path, data_dir, dataset, data_type, eva
         # Load converted retriever results
         try:
             if rerank_type == "code":
-                results_output_path = os.path.join(output_path, dataset, f'{data_type}_rank_100.json')
+                results_output_path = os.path.join(output_path, dataset, f'{data_type}_rank_10.json')
             else:
-                results_output_path = os.path.join(output_path, "beir", dataset, f'{data_type}_rank_100.json')
+                results_output_path = os.path.join(output_path, "beir", dataset, f'{data_type}_rank_10.json')
                 
             results_loader = ResultsLoader(results_output_path)
             results_to_rerank = results_loader.get_results(with_context=True)

@@ -82,7 +82,7 @@ def main():
     elif args.dataset == "loc-bench":
         dataset = load_dataset("czlll/Loc-Bench_V1")[args.split]
     elif args.dataset == "pattern-queries":
-        with open(os.getcwd() + "/pattern_queries_new_format_single.json", 'r') as f:
+        with open(os.getcwd() + "/pattern_queries_new_format.json", 'r') as f:
             dataset = Dataset.from_list(json.load(f))
     else:
         raise ValueError(f"Dataset {args.dataset} not supported")

@@ -1,6 +1,6 @@
 [
     {
-        "instance_id": "1",
+        "instance_id": "astropy__astropy-1",
         "repo": "astropy/astropy",
         "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
         "problem_statement": "Find all functions where: (1) the function body contains more than fifty assertion statements (assert keyword)",
@@ -15,7 +15,7 @@
         ]
     },
     {
-        "instance_id": "2",
+        "instance_id": "astropy__astropy-2",
         "repo": "astropy/astropy",
         "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
         "problem_statement": "Find all classes where: (1) the inheritance depth (distance from root class to this class in the inheritance hierarchy, including the root class (Object) and the class itself) is the maximum among all classes in the codebase",
@@ -26,7 +26,7 @@
         ]
     },
     {
-        "instance_id": "3",
+        "instance_id": "astropy__astropy-3",
         "repo": "astropy/astropy",
         "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
         "problem_statement": "Find all functions where: (1) the function has more than 15 parameters, and (2) the function is not an initialization method (e.g., __init__, constructor)",
@@ -36,7 +36,7 @@
         ]
     },
     {
-        "instance_id": "4",
+        "instance_id": "astropy__astropy-4",
         "repo": "astropy/astropy",
         "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
         "problem_statement": "Find all functions where: (1) the function contains a conditional statement, and (2) has the maximum number of branches in that conditional statement (counting if, elif, else)",
@@ -45,7 +45,7 @@
         ]
     },
     {
-        "instance_id": "5",
+        "instance_id": "astropy__astropy-5",
         "repo": "astropy/astropy",
         "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
         "problem_statement": "Find all functions where: (1) the function contains a while loop with at least one conditional statement in its body, and (2) the while loop body contains all three early exit statements: break, return, continue",
@@ -54,7 +54,7 @@
         ]
     },
     {
-        "instance_id": "6",
+        "instance_id": "astropy__astropy-6",
         "repo": "astropy/astropy",
         "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
         "problem_statement": "Find all functions where: (1) the function contains nested if statements, (2) an inner if statement redundantly checks a condition by the outer if statement, and (3) example: if A and B: ... if B: ...",
@@ -63,7 +63,7 @@
         ]
     },
     {
-        "instance_id": "7",
+        "instance_id": "astropy__astropy-7",
         "repo": "astropy/astropy",
         "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
         "problem_statement": "Find all files where: (1) the file contains the most imported objects",
@@ -72,7 +72,7 @@
         ]
     },
     {
-        "instance_id": "8",
+        "instance_id": "astropy__astropy-8",
         "repo": "astropy/astropy",
         "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
         "problem_statement": "Find all functions where: (1) the function only uses three parameters: self, *args, and **kwargs, (2) the function contains conditional statements (if/elif/else), and (3) the function contains try-except blocks",
@@ -85,7 +85,7 @@
         ]
     },
     {
-        "instance_id": "9",
+        "instance_id": "astropy__astropy-9",
         "repo": "astropy/astropy",
         "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
         "problem_statement": "Find all functions where: (1) the function has a while loop containing a try-except block, and (2) the except block contains a break statement",
@@ -96,7 +96,7 @@
         ]
     },
     {
-        "instance_id": "10",
+        "instance_id": "astropy__astropy-10",
         "repo": "astropy/astropy",
         "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
         "problem_statement": "Find all functions where: (1) the function has more than 5 parameters (excluding *args and **kwargs), and (2) the function contains a conditional statement with a while loop inside at least one of its branches",
@@ -108,7 +108,7 @@
         ]
     },
     {
-        "instance_id": "11",
+        "instance_id": "astropy__astropy-11",
         "repo": "astropy/astropy",
         "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
         "problem_statement": "Find all functions where: (1) the function contains a compound boolean expression using AND, OR, and NOT operators simultaneously, and (2) the expression at leaset includes type check for the bool type",
@@ -118,7 +118,7 @@
         ]
     },
     {
-        "instance_id": "12",
+        "instance_id": "astropy__astropy-12",
         "repo": "astropy/astropy",
         "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
         "problem_statement": "Find all functions where: (1) the function contains a conditional statement with a condition that uses the AND operator to combine two type-checking expressions, (2) one of branch of this conditional statement contains a for-in loop",
@@ -130,7 +130,7 @@
         ]
     },
     {
-        "instance_id": "13",
+        "instance_id": "astropy__astropy-13",
         "repo": "astropy/astropy",
         "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
         "problem_statement": "Find all functions where: (1) the function signature contains both *args and **kwargs parameters, (2) the function body contains an OR expression that combines exactly two equality checks (==)",
@@ -141,7 +141,7 @@
         ]
     },
     {
-        "instance_id": "14",
+        "instance_id": "astropy__astropy-14",
         "repo": "astropy/astropy",
         "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
         "problem_statement": "Find all classes where: (1) the __init__ method contains an if statement that checks whether a parameter is None, (2) one branch of this if statement raises TypeError and the other branch raises ValueError",
@@ -150,7 +150,7 @@
         ]
     },
     {
-        "instance_id": "15",
+        "instance_id": "astropy__astropy-15",
         "repo": "astropy/astropy",
         "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
         "problem_statement": "Find all functions where: (1) the function has exactly 13 parameters, (2) the function body performs membership validation using the in operator, (3) the function body performs None checks",
@@ -159,7 +159,7 @@
         ]
     },
     {
-        "instance_id": "16",
+        "instance_id": "astropy__astropy-16",
         "repo": "astropy/astropy",
         "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
         "problem_statement": "Find all functions where: (1) the function body contains type checking on 3 different built-in collections (list, dict, tuple)",
@@ -170,7 +170,7 @@
         ]
     },
     {
-        "instance_id": "17",
+        "instance_id": "astropy__astropy-17",
         "repo": "astropy/astropy",
         "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
         "problem_statement": "Find all functions where: (1) the function signature contains no parameters, (2) the function body contains type checking on both bool and str types",
@@ -181,7 +181,7 @@
         ]
     },
     {
-        "instance_id": "18",
+        "instance_id": "astropy__astropy-18",
         "repo": "astropy/astropy",
         "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
         "problem_statement": "Find all functions where: (1) the function contains a try-except block, (2) the function body includes type check for the float type",
@@ -195,7 +195,7 @@
         ]
     },
     {
-        "instance_id": "19",
+        "instance_id": "astropy__astropy-19",
         "repo": "astropy/astropy",
         "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
         "problem_statement": "Find all functions where: (1) the function uses with-open statements for file I/O, (2) the function has nested for-in loops, and (3) the function contains at least one import statement (import or from...import at function level)",
@@ -205,7 +205,7 @@
         ]
     },
     {
-        "instance_id": "20",
+        "instance_id": "astropy__astropy-20",
         "repo": "astropy/astropy",
         "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
         "problem_statement": "Find all functions where: (1) the function has at least 12 parameters with default values, (2) each default value is either None, True, or False, (3) all three values (None, True, False) appear at least once among these default values",
@@ -214,7 +214,7 @@
         ]
     },
     {
-        "instance_id": "21",
+        "instance_id": "astropy__astropy-21",
         "repo": "astropy/astropy",
         "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
         "problem_statement": "Find all functions where: (1) the function has at least 2 parameters with int default values, (2) the function body contains a try-except block",
@@ -226,7 +226,7 @@
         ]
     },
     {
-        "instance_id": "22",
+        "instance_id": "astropy__astropy-22",
         "repo": "astropy/astropy",
         "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
         "problem_statement": "Find all functions where: (1) the function has at least 10 parameters with default values, (2) the function contains a conditional statement with more than 5 branches",
@@ -236,7 +236,7 @@
         ]
     },
     {
-        "instance_id": "23",
+        "instance_id": "astropy__astropy-23",
         "repo": "astropy/astropy",
         "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
         "problem_statement": "Find all functions where: (1) the function contains exactly 5 try-except blocks, (2) try-except block handles different types of exception",
@@ -246,7 +246,7 @@
         ]
     },
     {
-        "instance_id": "24",
+        "instance_id": "astropy__astropy-24",
         "repo": "astropy/astropy",
         "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
         "problem_statement": "Find all functions where: (1) the function has at least 6 parameters, (2) the function body conditionally raises at least 4 different exception types",
@@ -258,7 +258,7 @@
         ]
     },
     {
-        "instance_id": "25",
+        "instance_id": "astropy__astropy-25",
         "repo": "astropy/astropy",
         "base_commit": "d16bfe05a744909de4b27f5875fe0d4ed41ce607",
         "problem_statement": "Find all classes where: (1) the class has more than 15 methods, (2) at least one method has more than 15 parameters (excluding `self`)",

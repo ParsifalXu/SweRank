@@ -2,6 +2,9 @@
 
 set -e
 
+# Use only available GPUs (1,2,3 are free based on nvidia-smi)
+export CUDA_VISIBLE_DEVICES=1,2,3
+
 export REPO_DIR="$(pwd)"
 export OUTPUT_DIR="${REPO_DIR}/results"
 
@@ -22,6 +25,7 @@ STEP_SIZE=5
 
 export NCCL_P2P_DISABLE=1
 export VLLM_WORKER_MULTIPROC_METHOD="spawn"
+export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
 
 ### RETRIEVER OUTPUT PATTERN: model=SweRankEmbed-Large_dataset=swe-bench-lite_split=test_level=function_evalmode=default_results.json
 
@@ -46,7 +50,8 @@ python src/rerank.py \
     --top_k "${TOP_K}" \
     --window_size "${WINDOW_SIZE}" \
     --step_size "${STEP_SIZE}" \
-    --use_parallel_reranking
+    --use_parallel_reranking \
+    --tensor_parallel_size 1
 
 echo "Reranking completed!"
 

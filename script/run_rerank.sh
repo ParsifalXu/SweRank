@@ -3,7 +3,7 @@
 set -e
 
 # Use only available GPUs (1,2,3 are free based on nvidia-smi)
-export CUDA_VISIBLE_DEVICES=1,2,3
+export CUDA_VISIBLE_DEVICES=2,3
 
 export REPO_DIR="$(pwd)"
 export OUTPUT_DIR="${REPO_DIR}/results"

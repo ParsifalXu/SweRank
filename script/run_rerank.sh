@@ -2,8 +2,8 @@
 
 set -e
 
-# Use only available GPUs (1,2,3 are free based on nvidia-smi)
-export CUDA_VISIBLE_DEVICES=2,3
+# Use only one GPU to avoid memory conflicts
+export CUDA_VISIBLE_DEVICES=2
 
 export REPO_DIR="$(pwd)"
 export OUTPUT_DIR="${REPO_DIR}/results"
